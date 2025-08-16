@@ -442,7 +442,7 @@ body{
   // Auth
   
   // Auth (SHA-256, client-side; obfuscation only, not real security)
-  const PASSWORD_HASH_HEX = "ccf21bf0f680e85c74177bae98b4cd93c464bb22e8b8c34f7517beb4d1af0a25"; // default: sha256("ICCS6"); change with window._hashPassword('nuova-password')
+  const PASSWORD_HASH_HEX = "ccf21bf0f680e85c74177bae98b4cd93c464bb22e8b8c34f7517beb4d1af0a25"; // default: sha256(""); change with window._hashPassword('nuova-password')
   const buf2hex = (buf) => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2,'0')).join('');
   const sha256 = async (str) => buf2hex(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str)));
 
