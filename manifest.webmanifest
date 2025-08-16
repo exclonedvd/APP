@@ -5,7 +5,7 @@
   "start_url": "./ICCS6_StormoFinal_protected.html?source=pwa",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
